@@ -1,0 +1,1159 @@
+/* ==============================================================
+   MovieMate – Pages Styling
+   ============================================================== */
+
+/* Section Titles */
+.section-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+.section-subtitle {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.view-all-link {
+  color: var(--brand-primary);
+  font-weight: 600;
+  font-size: 14px;
+  transition: transform 0.2s;
+}
+
+.view-all-link:hover {
+  transform: translateX(4px);
+  color: var(--brand-light);
+}
+
+.movie-section {
+  margin-bottom: 50px;
+}
+
+/* Home Top Bar */
+.home-top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background: #111827;
+  padding: 14px 20px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+  margin-bottom: 36px;
+  flex-wrap: wrap;
+}
+
+.location-callout {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #e2e8f0;
+}
+
+.pulse-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--brand-primary);
+  box-shadow: 0 0 10px var(--brand-primary);
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(0.9); opacity: 0.8; }
+  50% { transform: scale(1.3); opacity: 1; }
+  100% { transform: scale(0.9); opacity: 0.8; }
+}
+
+.genre-chips-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.genre-chip {
+  background: #1f2937;
+  color: #cbd5e1;
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  font-size: 13px;
+  font-weight: 600;
+  border: 1px solid #374151;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.genre-chip:hover {
+  background: #374151;
+  color: #fff;
+}
+
+.genre-chip.active {
+  background: var(--brand-primary);
+  color: #fff;
+  border-color: var(--brand-primary);
+  box-shadow: 0 0 12px var(--brand-glow);
+}
+
+/* Educational Callout Card */
+.edu-callout-card {
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  border: 1px solid #38bdf8;
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 40px;
+  box-shadow: 0 8px 24px rgba(56, 189, 248, 0.15);
+}
+
+.edu-callout-text h3 {
+  color: #38bdf8;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.edu-callout-text p {
+  color: #cbd5e1;
+  font-size: 14px;
+  line-height: 1.5;
+  max-width: 780px;
+}
+
+/* Filter Toolbar in Catalog */
+.catalog-header {
+  margin-bottom: 24px;
+}
+
+.page-title {
+  font-size: 30px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.page-subtitle {
+  color: var(--text-muted);
+  font-size: 15px;
+}
+
+.filter-toolbar {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+  background: #111827;
+  padding: 20px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+  min-width: 140px;
+}
+
+.search-filter-group {
+  flex: 2;
+  min-width: 220px;
+}
+
+.filter-group label {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #94a3b8;
+  letter-spacing: 0.5px;
+}
+
+.filter-actions {
+  display: flex;
+  align-items: flex-end;
+}
+
+.clear-btn {
+  height: 42px;
+}
+
+.results-status-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+}
+
+.empty-results-box {
+  background: #111827;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 60px 20px;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.empty-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+/* Movie Details Hero */
+.details-banner {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid var(--border-subtle);
+  margin-bottom: 40px;
+}
+
+.details-banner-content {
+  display: flex;
+  gap: 36px;
+  padding: 40px;
+  align-items: flex-start;
+}
+
+.details-poster-box {
+  width: 240px;
+  flex-shrink: 0;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.8);
+  border: 1px solid #374151;
+}
+
+.details-poster-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.details-text-box {
+  flex: 1;
+}
+
+.status-pill {
+  margin-bottom: 12px;
+}
+
+.details-title {
+  font-size: 34px;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.2;
+  margin-bottom: 14px;
+}
+
+.details-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.meta-badge {
+  background: #1e293b;
+  border: 1px solid #334155;
+  color: #cbd5e1;
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.storyline-box h3 {
+  font-size: 16px;
+  color: #e2e8f0;
+  margin-bottom: 8px;
+}
+
+.storyline-box p {
+  color: #94a3b8;
+  line-height: 1.6;
+  font-size: 15px;
+  max-width: 750px;
+}
+
+/* Showtime Booking Section */
+.showtime-booking-section {
+  background: #111827;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+  padding: 30px;
+  margin-bottom: 40px;
+}
+
+.showtime-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.city-filter-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.date-tabs-bar {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 16px;
+  overflow-x: auto;
+}
+
+.date-tab-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px;
+  background: #1f2937;
+  border: 1px solid #374151;
+  border-radius: var(--radius-md);
+  color: #cbd5e1;
+  min-width: 100px;
+  transition: all 0.2s ease;
+}
+
+.date-tab-btn:hover {
+  background: #374151;
+}
+
+.date-tab-btn.active {
+  background: var(--brand-primary);
+  border-color: var(--brand-primary);
+  color: #fff;
+  box-shadow: 0 0 12px var(--brand-glow);
+}
+
+.tab-day-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.tab-date-num {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+/* Cinemas & Showtimes Cards */
+.cinemas-showtimes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cinema-show-card {
+  background: #1f2937;
+  border-radius: var(--radius-md);
+  padding: 20px;
+  border: 1px solid #374151;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cinema-card-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.cinema-card-name {
+  font-size: 17px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.cinema-city-badge {
+  font-size: 12px;
+  color: var(--accent-cyan);
+  background: rgba(56, 189, 248, 0.1);
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+}
+
+.showtimes-pills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.showtime-pill {
+  background: #111827;
+  border: 1px solid #374151;
+  border-radius: var(--radius-md);
+  padding: 10px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  min-width: 105px;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.showtime-pill:hover {
+  border-color: var(--brand-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(225, 29, 72, 0.25);
+}
+
+.showtime-pill.filling-fast {
+  border-color: rgba(245, 158, 11, 0.6);
+}
+
+.show-time {
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.show-price {
+  font-size: 12px;
+  color: var(--accent-cyan);
+  font-weight: 600;
+}
+
+.show-availability {
+  font-size: 10px;
+  color: #94a3b8;
+  text-transform: uppercase;
+}
+
+.empty-showtimes-card {
+  padding: 40px;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+/* Cinemas Directory */
+.cinema-city-filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #111827;
+  padding: 14px 20px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+
+.city-pill-buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.city-pill-btn {
+  background: #1f2937;
+  color: #cbd5e1;
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  font-size: 13px;
+  font-weight: 600;
+  border: 1px solid #374151;
+}
+
+.city-pill-btn.active {
+  background: var(--brand-primary);
+  color: #fff;
+  border-color: var(--brand-primary);
+}
+
+.cinemas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.cinema-detail-card {
+  background: #1e293b;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cinema-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.cinema-icon-badge {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--accent-cyan);
+}
+
+.cinema-price-badge {
+  font-size: 12px;
+  color: #34d399;
+  font-weight: 600;
+}
+
+.cinema-name-heading {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.cinema-address-line {
+  font-size: 13px;
+  color: #94a3b8;
+  margin-bottom: 18px;
+}
+
+.cinema-amenities-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.amenity-tag {
+  background: #0f172a;
+  border: 1px solid #334155;
+  color: #94a3b8;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+}
+
+/* Seat Selection Page Layout */
+.seat-page-header {
+  margin-bottom: 24px;
+}
+
+.showtime-summary-card {
+  background: #111827;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 20px 24px;
+}
+
+.summary-movie-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+.summary-cinema-line {
+  color: #94a3b8;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.summary-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.summary-pill {
+  background: #1f2937;
+  color: #cbd5e1;
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid #374151;
+}
+
+.seat-booking-layout {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr;
+  gap: 28px;
+  align-items: flex-start;
+}
+
+/* Checkout Sidebar Card */
+.checkout-card {
+  background: #111827;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+}
+
+.checkout-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #1f2937;
+}
+
+.checkout-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.highlight-val {
+  color: var(--brand-light);
+  font-weight: 700;
+}
+
+.divider-hr {
+  height: 1px;
+  background: #1f2937;
+  margin: 16px 0;
+}
+
+.grand-total-row {
+  margin-top: 8px;
+}
+
+.grand-label {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.grand-val {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--brand-primary);
+}
+
+.payment-simulation-notice {
+  background: rgba(56, 189, 248, 0.08);
+  border: 1px dashed rgba(56, 189, 248, 0.3);
+  padding: 10px;
+  border-radius: var(--radius-md);
+  font-size: 12px;
+  color: #93c5fd;
+  margin: 18px 0;
+  line-height: 1.4;
+}
+
+.confirm-btn {
+  margin-top: 8px;
+}
+
+.auth-hint {
+  font-size: 11px;
+  color: #94a3b8;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.academic-insight-box {
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: var(--radius-lg);
+  padding: 16px;
+  margin-top: 20px;
+}
+
+.academic-insight-box h4 {
+  color: #38bdf8;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.academic-insight-box p {
+  color: #94a3b8;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* Booking Confirmation Banner */
+.confirmation-banner {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.conf-icon {
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+
+.conf-heading {
+  font-size: 32px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.conf-sub {
+  color: #94a3b8;
+  font-size: 15px;
+}
+
+.confirmation-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+/* My Bookings List */
+.bookings-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.booking-card-item {
+  background: #1e293b;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+}
+
+.booking-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #334155;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.booking-ref-badge {
+  background: #0f172a;
+  color: var(--accent-cyan);
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  font-weight: 700;
+  font-size: 13px;
+  margin-right: 12px;
+}
+
+.booking-date-stamp {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.booking-status-tag {
+  background: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.booking-item-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.b-movie-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+.b-cinema-name {
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+.b-meta-details {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.b-meta-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.b-label {
+  font-size: 10px;
+  font-weight: 700;
+  color: #64748b;
+  letter-spacing: 0.5px;
+}
+
+.b-val {
+  font-size: 14px;
+  font-weight: 600;
+  color: #cbd5e1;
+}
+
+/* Modal */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(8px);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modal-content {
+  position: relative;
+  width: 100%;
+  max-width: 820px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+  background: #374151;
+  color: #fff;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Authentication Cards */
+.auth-page-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 250px);
+}
+
+.auth-card {
+  background: #111827;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 36px;
+  width: 100%;
+  max-width: 460px;
+  box-shadow: var(--shadow-lg);
+}
+
+.auth-card-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.auth-logo {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--brand-primary);
+  margin-bottom: 8px;
+}
+
+.auth-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.auth-sub {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #cbd5e1;
+}
+
+.demo-helper-box {
+  background: #1f2937;
+  padding: 12px;
+  border-radius: var(--radius-md);
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 12px;
+  color: #94a3b8;
+  text-align: center;
+}
+
+.auth-card-footer {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.auth-switch-link {
+  color: var(--brand-primary);
+  font-weight: 600;
+}
+
+.auth-switch-link:hover {
+  text-decoration: underline;
+}
+
+/* FAQ Accordion */
+.faq-accordion-container {
+  max-width: 860px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.faq-item {
+  background: #111827;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: border-color 0.2s;
+}
+
+.faq-item.active {
+  border-color: #4b5563;
+}
+
+.faq-question-btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: transparent;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.faq-question-btn:hover {
+  background: #1f2937;
+}
+
+.faq-toggle-icon {
+  font-size: 20px;
+  color: var(--brand-primary);
+  margin-left: 12px;
+}
+
+.faq-answer-panel {
+  padding: 0 20px 20px;
+  color: #94a3b8;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Educational Page Elements */
+.live-servlet-card {
+  background: linear-gradient(135deg, #0369a1, #0f172a);
+  border: 1px solid #38bdf8;
+  border-radius: var(--radius-lg);
+  padding: 30px;
+  margin-bottom: 40px;
+}
+
+.pulse-indicator {
+  display: inline-block;
+  background: #10b981;
+  color: #042f2e;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 10px;
+}
+
+.edu-section {
+  margin-bottom: 40px;
+}
+
+.edu-section-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #111827;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.comparison-table th, .comparison-table td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid #1f2937;
+  font-size: 13px;
+}
+
+.comparison-table th {
+  background: #0f172a;
+  color: #38bdf8;
+  font-weight: 700;
+}
+
+.format-badge {
+  background: #1e293b;
+  color: #a78bfa;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+.pro-text {
+  color: #34d399;
+}
+
+.con-text {
+  color: #fb7185;
+}
+
+.code-evolution-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.code-card {
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.code-card-header {
+  background: #1e293b;
+  padding: 10px 14px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #cbd5e1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.code-lang {
+  color: var(--accent-cyan);
+}
+
+.code-card pre {
+  padding: 14px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 12px;
+  color: #f1f5f9;
+  line-height: 1.4;
+  overflow-x: auto;
+  flex: 1;
+}
+
+.code-card-desc {
+  padding: 10px 14px;
+  font-size: 12px;
+  color: #94a3b8;
+  border-top: 1px solid #1e293b;
+  background: #111827;
+}
+
+.explanation-callout {
+  background: #1e293b;
+  border-left: 4px solid var(--brand-primary);
+  border-radius: var(--radius-md);
+  padding: 24px;
+}
+
+.explanation-callout h3 {
+  color: #fff;
+  font-size: 17px;
+  margin-bottom: 12px;
+}
+
+.explanation-callout ul {
+  padding-left: 20px;
+  color: #cbd5e1;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .details-banner-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 24px;
+  }
+  .details-poster-box {
+    width: 180px;
+  }
+  .details-meta-row {
+    justify-content: center;
+  }
+  .seat-booking-layout {
+    grid-template-columns: 1fr;
+  }
+}
