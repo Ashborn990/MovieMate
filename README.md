@@ -4,7 +4,7 @@ MovieMate is a full-stack movie ticket booking web application built using React
 
 The application allows users to browse movies, explore cinemas, view showtimes, select seats, book tickets and view their booking history.
 
-It is designed as a learning project and demonstrates frontend development, REST API integration, backend business logic, database connectivity and session-based authentication.
+The application demonstrates frontend development, REST API integration, backend business logic, database connectivity and session-based authentication.
 
 ---
 
@@ -741,7 +741,7 @@ Working on MovieMate provides practical experience with:
 
 ## 16. License
 
-This project is developed for educational, academic and portfolio demonstration purposes.
+This project is developed for portfolio and demonstration purposes.
 
 ---
 
